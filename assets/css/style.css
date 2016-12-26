@@ -77,6 +77,10 @@ input[type=text]:focus {
 	height: 350px;
 }
 
+#train-schedule {
+	text-align: center;
+}
+
 #buttons-container {
 	float: right;
 	margin-right: 5px;
@@ -102,20 +106,7 @@ button {
   }
 }
 
-.hvr-back-pulse {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  overflow: hidden;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-
-.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+.hvr-back-pulse:hover {
   -webkit-animation-name: hvr-back-pulse;
   animation-name: hvr-back-pulse;
   -webkit-animation-duration: 3s;

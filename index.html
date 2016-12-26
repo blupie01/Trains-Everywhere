@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -13,7 +14,25 @@
 		<h2>Get in.</h2>
 	</div>
 
-	<div id="train-schedule"></div>
+	<div id="train-schedule">
+		<div class="row">
+			<div class="col-md-3">
+				Train Name
+			</div>
+			<div class="col-md-3">
+				Destination
+			</div>
+			<div class="col-md-2">
+				Frequency (Min)
+			</div>
+			<div class="col-md-2">
+				Next Arrival
+			</div>
+			<div class="col-md-2">
+				Minutes Away
+			</div>
+		</div>
+	</div>
 
 	<div id="form-container">
 		<form id="train-adder-form">
@@ -27,14 +46,14 @@
 			<input type="text" id="train-destination">
 			<br>			
 
-			<label for="train-adder-form">First Train Time</label>
+			<label for="train-adder-form">First Train Time (HH:MM)</label>
 			<br>
 			<input type="text" id="first-train-time">
 			<br>
 
-			<label for="train-adder-form">Train Frequency</label>
+			<label for="train-adder-form">Train Frequency (Min)</label>
 			<br>
-			<input type="text" name="train-frequency">
+			<input type="text" id="train-frequency">
 			<br>
 
 			<div id="buttons-container">
@@ -44,19 +63,8 @@
 		</form>
 	</div>
 	
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-<!-- 	<script>
-	  	// Initialize Firebase
-	  	var config = {
-	    apiKey: "AIzaSyB8hJRJeScaWopXWCzPEgG7UA0VnG5Vo0E",
-	    authDomain: "trainspotter-45428.firebaseapp.com",
-	    databaseURL: "https://trainspotter-45428.firebaseio.com",
-	    storageBucket: "trainspotter-45428.appspot.com",
-	    messagingSenderId: "642093108830"
-	  };
-	  firebase.initializeApp(config);
-	</script> -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </body>
 </html>
