@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TrainSpotter</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div id="header">
+		<h1>TrainSpotter</h1>
+		<h2>Get in.</h2>
+	</div>
+
+	<div id="train-schedule"></div>
+
+	<div id="form-container">
+		<form id="train-adder-form">
+			<label for="train-adder-form">Train Name</label>
+			<br>
+			<input type="text" id="train-name">
+			<br>
+
+			<label for="train-adder-form">Destination</label>
+			<br>
+			<input type="text" id="train-destination">
+			<br>			
+
+			<label for="train-adder-form">First Train Time</label>
+			<br>
+			<input type="text" id="first-train-time">
+			<br>
+
+			<label for="train-adder-form">Train Frequency</label>
+			<br>
+			<input type="text" name="train-frequency">
+			<br>
+
+			<div id="buttons-container">
+				<button type="submit" form="train-adder-form" value="Submit" class="hvr-back-pulse">Submit</button>
+				<button type="reset" value="Reset" id="clear" class="hvr-back-pulse">Clear</button>
+			</div>
+		</form>
+	</div>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<!-- 	<script>
+	  	// Initialize Firebase
+	  	var config = {
+	    apiKey: "AIzaSyB8hJRJeScaWopXWCzPEgG7UA0VnG5Vo0E",
+	    authDomain: "trainspotter-45428.firebaseapp.com",
+	    databaseURL: "https://trainspotter-45428.firebaseio.com",
+	    storageBucket: "trainspotter-45428.appspot.com",
+	    messagingSenderId: "642093108830"
+	  };
+	  firebase.initializeApp(config);
+	</script> -->
+</body>
+</html>

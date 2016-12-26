@@ -1,0 +1,147 @@
+@font-face {
+	font-family: "HandwritingDraft";
+	src: url("../fonts/handwriting-draft_free-version.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "LEDCalculator";
+	src: url("../fonts/LEDCalculator.ttf") format("truetype");
+}
+
+html {
+	background: url("../images/wallhaven-317574.jpg") no-repeat center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.well {
+   background-color: rgba(245, 245, 245, 0.4);
+}
+
+body {
+	margin: 0 auto;
+	background-color: transparent;
+	width: 1000px;
+}
+
+h1, h2 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: "HandwritingDraft";
+}
+
+h1 {
+	font-size: 5em;
+	padding-top: 10px;
+}
+
+h2 {
+	font-size: 2.5em;
+	padding: 15px 0px;
+}
+
+#header {
+	background-color: rgba(91, 50, 8, .75);
+	color: white;
+}
+
+form {
+	padding: 20px;
+}
+
+label {
+	margin-left: 5px;
+	font-family: "LEDCalculator";
+}
+
+input[type=text] {
+	color: black;
+	padding: 5px;
+	margin-left: 5px;
+	margin-bottom: 8px;
+	width: 99%;
+}
+
+input[type=text]:focus {
+	color: black;
+	background: #FFC778;
+	border-color: black;
+}
+
+#form-container {
+	background-color: rgba(91, 50, 8, .75);
+	color: white;
+	font-size: 1.2em;
+	height: 350px;
+}
+
+#buttons-container {
+	float: right;
+	margin-right: 5px;
+	color: black;
+}
+
+button {
+	font-family: "LEDCalculator";
+	border: none;
+	width: 90px;
+	height: 28px;
+}
+
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(196, 166, 134, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(196, 166, 134, 0.75);
+  }
+}
+
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #371E16;
+  color: white;
+}
+
+#train-schedule {
+/*    margin: 0px 10px 20px 10px;
+    padding: 10px 15px;
+    width: 1000px;*/
+    height: 450px;
+    overflow-y: hidden;
+    overflow: scroll;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fcfcfc;
+}
+::-webkit-scrollbar {
+	/*width: 0px;*/
+	background: transparent;
+}
