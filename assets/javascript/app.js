@@ -11,6 +11,11 @@ firebase.initializeApp(config);
 //var to hold database info
 var trainDataBase = firebase.database();
 
+
+//---------------test-----------------------
+console.log(trainDataBase.ref().orderByKey());
+//---------------test-----------------------
+
 //var to hold information from form
 var trainName = "";
 var destination = "";
